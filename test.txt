@@ -1,0 +1,10 @@
+ Volume in drive C is OS
+ Volume Serial Number is F06A-C08B
+
+ Directory of C:\Users\Dell\OneDrive\Desktop\Assignment1
+
+15-05-2021  20:53    <DIR>          .
+15-05-2021  20:53    <DIR>          ..
+15-05-2021  20:53                 0 test.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  16,939,954,176 bytes free
