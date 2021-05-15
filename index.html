@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+<head>
+ <script src="https://kit.fontawesome.com/8be02545b1.js" crossorigin="anonymous"></script>
+ <title>Vegan's Diner</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <style type="text/css">
+
+
+    .green{
+        color:green;
+    }
+    .name{
+        font-size:350%;
+        color:rgb(1, 39, 1);
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight:bold;
+        text-align:left;
+    }
+    .navbar{
+        background-color: rgb(96, 218, 96);
+        width:98%;
+        height:80px;
+        padding:10px;
+        position:fixed;
+        margin-top:0;
+        border-radius:10px;
+        z-index:1;
+    }
+    .navlist{
+        color:black;
+        font-size:160%;
+        position:relative;
+        top:18px;
+        float:right;
+    }
+    a:link{
+        color:black;
+        font-weight:bold;
+        text-decoration: none;
+    }
+    a:hover{
+        font-size:105%;
+        font-weight:bolder;
+        text-decoration: none;
+    }
+    a:visited{
+        color:black;
+        font-weight:bold;
+    }
+    
+    p{
+        padding:0;
+        margin:0;
+    }
+    .intro{
+        display:flex;
+        justify-content:space-around;
+        z-index:2;
+    }
+    .sec1{
+        flex:2;
+        position:relative;
+        left:3%;
+        top:50px;
+        border-radius:20px;
+        overflow:hidden;
+    }
+    .sec2{
+        flex:1;
+        position:relative;
+        top:50px;
+        font-size:150%;
+        color:rgb(3, 37, 3);
+        border-radius:10px;
+        background-color:rgb(250, 234, 199);
+        width:100%;
+        padding:50px;
+    }
+    .specialities{
+        display:flex;
+        justify-content:space-around;
+    }
+    .specialities div{
+        border-radius:10px;
+        padding:50px;
+        background-color:rgb(250, 234, 199);
+        width:12%;
+        position:relative;
+    }
+    .dishdetails{
+        font-size:150%;
+        color:rgb(43, 6, 6);
+        font-weight: bold;
+
+    }
+    .button{
+        width:100px;
+        background-color: white;
+        color:rgb(43, 6, 6);
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight:bold;
+        font-size:110%;
+        border-radius: 10px;
+    }
+    .button1:hover{
+        font-size:135%;
+        background-color: rgb(96, 218, 96);
+    }
+    .button2:hover{
+        text-decoration: underline;
+    }
+    .searchbar input[type=text] {
+        width:70%;
+        font-size:150%;
+        padding:10px;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: rgb(96, 218, 96);
+        
+    }
+    .searchbar {
+        display:flex;
+        justify-content: left;
+        margin-left:5%;
+        border:black;
+        border-width:5px;
+    }
+    .search{
+        flex:9;
+    }
+    .searchbutton{
+        flex:1;
+        position:relative;
+        right:640%;
+    }
+    .searchbutton:hover{
+        background-color: rgb(96, 218, 96);
+        color:white;
+    }
+    .reviews{
+        display:flex;
+        flex-direction:row;
+    }
+    .customerreviews{
+        display:flex;
+        flex-direction:column;
+    }
+    .customerreviews div{
+        width:250%;
+        background-color:rgb(250, 234, 199) ;
+        border-radius:10px;
+        position:relative;
+        left:46px;
+        padding:10px;
+    }
+    .floatleft{
+        float:left;
+    }
+    .floatright{
+        float:right;
+    }
+    .customer{
+        font-size:120%;
+        font-weight:bolder;
+        color:blue;
+    }
+    .reviewform{
+        position:relative;
+        right:-39%;
+        background-color:rgb(250, 234, 199) ;
+        padding:20px;
+        border-radius:10px;
+
+    }
+    .info input{
+        font-size:120%;
+        width:75%;
+        padding:10px;
+        border-radius:10px;
+    }
+    .info textarea{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:120%;
+        width:75%;
+        height:100%;
+        padding:10px;
+        border-radius:10px;
+        border-color:black;
+        border-width:2px;
+    }
+    .links{
+        text-align:center;
+        color:rgb(153, 250, 153);
+        background-color:rgb(33, 37, 32);
+        padding:10px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom:0px;
+    }
+    
+
+
+</style>
+</head>
+<body>
+
+   <div class="navbar">
+
+    <i class="fas fa-utensils fa-border fa-3x" style="color:rgb(3, 37, 3);"></i>
+
+    <span class="name">Vegan's Diner</span>
+
+    <span class="navlist">
+        <a href="#intro">Intro</a>
+        &nbsp;&nbsp;
+        <a href="#specials">Specialties</a>
+        &nbsp;&nbsp;
+        <a href="#recommendations">Our Recommendations</a>
+        &nbsp;&nbsp;
+        <a href="#reviews">Reviews</a>
+        &nbsp;&nbsp;
+        <a href="#quicklinks">Quick links</a>
+    
+    </span>
+
+   </div>
+    
+   <a name="intro"></a>
+
+   <br /><br /><br /><br /><br /><br />
+
+   <div class="intro">
+     <div class="sec1">
+
+        <p><img src="images/diner.jpg" width=100%></img></p>
+
+     </div>
+
+     <div class="sec2">
+
+        <p style="font-size:150%">Welcome to</p>
+        <p class="name">Vegan's Diner</p>
+        <br /><br /><br />
+        <p><em><a href="#specials">Check out our specialties!</a></em></p>
+
+        
+    </div>
+
+   </div>
+
+   <a name="specials"></a>
+
+   <br /><br /><br /><br /><br /><br />
+
+   <p style="font-size:250%; color:rgb(1, 39, 1); font-family: 'Trebuchet MS', sans-serif; font-weight:bold; margin-left:5%">Our Specialities</p>
+    <br /><br /><br />
+
+
+   
+<div class="specialities">
+
+
+
+    <div class="dish1">
+        <p ><img src="images/spicytofuroll.jpg" width="108%"/></p>
+        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish2">
+        <p ><img src="images/pasta.jpg" width="108%"/></p>
+        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish3">
+        <p ><img src="images/falafelwrap.jpg" width="108%"/></p>
+        <p class="dishdetails">Falafel Wrap<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish4">
+        <p ><img src="images/veganmexicanbowl.jpg" width="108%"/></p>
+        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+        
+</div>
+
+<a name="recommendations"></a>
+
+<br /><br /><br /><br /><br /><br />
+
+
+   <p style="font-size:250%; color:rgb(1, 39, 1); font-family: 'Trebuchet MS', sans-serif; font-weight:bold; margin-left:5%">Our Recommendations</p>
+    <br /><br /><br />
+<div class="searchbar">
+    <div class="search" ><input type="text" placeholder="Search for your favorite dishes:)"  /></div>
+    <div ><button class="searchbutton"><i class="fas fa-search fa-2x fa-border"></i></button></div>
+</div>
+
+<br /><br /><br />
+
+<div class="specialities">
+
+
+
+    <div class="dish1">
+        <p ><img src="images/spicytofuroll.jpg" width="108%"/></p>
+        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish6">
+        <p ><img src="images/greenthaicurry.jpg" width="108%"/></p>
+        <p class="dishdetails">Green Thai Curry<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish2">
+        <p ><img src="images/pasta.jpg" width="108%"/></p>
+        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish5">
+        <p ><img src="images/tofuwrap.jpg" width="108%"/></p>
+        <p class="dishdetails">Tofu Wrap<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+        
+</div>
+
+<br /><br /><br />
+
+<div class="specialities">
+
+
+    <div class="dish3">
+        <p ><img src="images/falafelwrap.jpg" width="108%"/></p>
+        <p class="dishdetails">Falafel Wrap<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish4">
+        <p ><img src="images/veganmexicanbowl.jpg" width="108%"/></p>
+        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish7">
+        <p ><img src="images/mixsalad.jpg" width="108%"/></p>
+        <p class="dishdetails">Protein Mix Salad<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+    <div class="dish8">
+        <p ><img src="images/rainsalad.jpg" width="108%"/></p>
+        <p class="dishdetails">Rainbow Salad<br />&#8377; ...</p>
+        <br />
+        <button class="button button1">Add+</button>
+        <button class="button button2">Know more</button>
+
+    </div>
+
+        
+</div>
+<a name="reviews"></a>
+
+<br /><br /><br /><br /><br /><br />
+
+
+   <p style="font-size:250%; color:rgb(1, 39, 1); font-family: 'Trebuchet MS', sans-serif; font-weight:bold; margin-left:5%">Reviews</p>
+    <br /><br /><br />
+
+<div class="reviews">
+    <div class="customerreviews">
+
+        <div class="rev1">
+            <p><img src="images/ran1.jpg" width="50px" height="70px" class="floatleft"/></p>
+            <p class="floatleft customer">Angela Kinsey</p>
+            <br />
+            <p class="floatleft">Wonderful experience!</p>
+        </div>
+
+        <br />
+
+        <div class="rev2">
+            <p><img src="images/ran2.jpg" width="50px" height="70px" class="floatleft"/></p>
+            <p class="floatleft customer">Sandra Rose</p>
+            <br />
+            <p class="floatleft">Very tasty meal and very soothing environment</p>
+        </div>
+
+        <br />
+
+        <div class="rev3">
+            <p><img src="images/ran3.jpg" width="50px" height="70px" class="floatleft"/></p>
+            <p class="floatleft customer">Terry Brown</p>
+            <br />
+            <p class="floatleft">Good service and perfect ambience</p>
+        </div>
+
+        <br />
+
+        <div class="rev4">
+            <p><img src="images/ran4.jpg" width="50px" height="70px" class="floatleft"/></p>
+            <p class="floatleft customer">Mark Coleman</p>
+            <br />
+            <p class="floatleft">Loved the food and the cozy ambience</p>
+        </div>
+
+    </div>
+    <div class="reviewform">
+        <p style="font-size:180%; font-family:'Trebuchet MS', sans-serif;">Have a minute? Please drop a review!</p>
+        <br /><br />
+        <div class="info"><input type="text" placeholder="Enter your name" /><br /><br />
+            <input type="email" placeholder="Enter your email address eg. abc@xyz.com" /><br /><br />
+            <textarea type="text" placeholder="Write your review here..."></textarea><br /><br />
+            <input type="submit" value="Submit your review" />
+        </div>
+
+
+    </div>
+
+</div>
+<a name="quicklinks"></a>
+
+<br /><br /><br /><br /><br /><br />
+
+<div class="links">
+
+    <p style="font-size:250%; font-family: 'Trebuchet MS', sans-serif; font-weight:bold;">Follow us!</p>
+    <br />
+    <p><a href="https://www.instagram.com" target=_blank><i class="fab fa-instagram fa-2x" style="color:rgb(96, 218, 96)"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-f fa-2x" style="color:rgb(96, 218, 96)"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com" target=_blank><i class="fab fa-twitter fa-2x" style="color:rgb(96, 218, 96)"></i></a>
+    </p>
+    <br /><br />
+
+    <p style="font-size:110%; font-family: 'Trebuchet MS', sans-serif;"><a>Terms and conditions</a></p><br />
+    <p style="font-size:110%; font-family: 'Trebuchet MS', sans-serif;"><a>Privacy Policy</a></p><br />
+    <p style="font-size:110%; font-family: 'Trebuchet MS', sans-serif;"><a>Copyright Information</a></p><br />
+
+    <br />
+
+    <a href="#intro"><p style="font-size:110%; font-family: 'Trebuchet MS', sans-serif; color:rgb(96, 218, 96);">Back-to-top&nbsp;<i class="far fa-arrow-alt-circle-up fa-1.5x" style="color:rgb(96, 218, 96)"></i></p></a>
+
+</div>
+
+</body>
+</html>
