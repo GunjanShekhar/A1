@@ -12,6 +12,32 @@
     .green{
         color:green;
     }
+    @media(min-width:450px){
+        .intro{
+        display:flex;
+        justify-content:space-around;
+        z-index:2;
+        }
+        .specialities{
+        display:flex;
+        justify-content:space-around;
+        }
+        
+    }
+    @media(min-width:450px){
+        .searchbar {
+        display:flex;
+        justify-content: left;
+        margin-left:5%;
+        border:black;
+        border-width:5px;
+        }
+        .reviews{
+        display:flex;
+        flex-direction:row;
+        }
+        
+    }
     .name{
         font-size:350%;
         color:rgb(1, 39, 1);
@@ -55,11 +81,7 @@
         padding:0;
         margin:0;
     }
-    .intro{
-        display:flex;
-        justify-content:space-around;
-        z-index:2;
-    }
+    
     .sec1{
         flex:2;
         position:relative;
@@ -79,10 +101,7 @@
         width:100%;
         padding:50px;
     }
-    .specialities{
-        display:flex;
-        justify-content:space-around;
-    }
+    
     .specialities div{
         border-radius:10px;
         padding:50px;
@@ -121,13 +140,7 @@
         border-color: rgb(96, 218, 96);
         
     }
-    .searchbar {
-        display:flex;
-        justify-content: left;
-        margin-left:5%;
-        border:black;
-        border-width:5px;
-    }
+    
     .search{
         flex:9;
     }
@@ -140,14 +153,11 @@
         background-color: rgb(96, 218, 96);
         color:white;
     }
-    .reviews{
-        display:flex;
-        flex-direction:row;
-    }
     .customerreviews{
         display:flex;
         flex-direction:column;
-    }
+        }
+    
     .customerreviews div{
         width:250%;
         background-color:rgb(250, 234, 199) ;
@@ -266,7 +276,7 @@
 
     <div class="dish1">
         <p ><img src="images/spicytofuroll.jpg" width="108%"/></p>
-        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; ...</p>
+        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; 329</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -275,7 +285,7 @@
 
     <div class="dish2">
         <p ><img src="images/pasta.jpg" width="108%"/></p>
-        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; ...</p>
+        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; 350</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -284,7 +294,7 @@
 
     <div class="dish3">
         <p ><img src="images/falafelwrap.jpg" width="108%"/></p>
-        <p class="dishdetails">Falafel Wrap<br />&#8377; ...</p>
+        <p class="dishdetails">Falafel Wrap<br />&#8377; 269</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -293,7 +303,7 @@
 
     <div class="dish4">
         <p ><img src="images/veganmexicanbowl.jpg" width="108%"/></p>
-        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; ...</p>
+        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; 269</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -323,7 +333,7 @@
 
     <div class="dish1">
         <p ><img src="images/spicytofuroll.jpg" width="108%"/></p>
-        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; ...</p>
+        <p class="dishdetails">Spicy Tofu Roll<br />&#8377; 329</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -332,7 +342,7 @@
 
     <div class="dish6">
         <p ><img src="images/greenthaicurry.jpg" width="108%"/></p>
-        <p class="dishdetails">Green Thai Curry<br />&#8377; ...</p>
+        <p class="dishdetails">Green Thai Curry<br />&#8377; 299</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -341,7 +351,7 @@
 
     <div class="dish2">
         <p ><img src="images/pasta.jpg" width="108%"/></p>
-        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; ...</p>
+        <p class="dishdetails">Chef's Special Vegan Pasta<br />&#8377; 350</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -350,7 +360,7 @@
 
     <div class="dish5">
         <p ><img src="images/tofuwrap.jpg" width="108%"/></p>
-        <p class="dishdetails">Tofu Wrap<br />&#8377; ...</p>
+        <p class="dishdetails">Tofu Wrap<br />&#8377; 279</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -367,7 +377,7 @@
 
     <div class="dish3">
         <p ><img src="images/falafelwrap.jpg" width="108%"/></p>
-        <p class="dishdetails">Falafel Wrap<br />&#8377; ...</p>
+        <p class="dishdetails">Falafel Wrap<br />&#8377; 269</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -376,7 +386,7 @@
 
     <div class="dish4">
         <p ><img src="images/veganmexicanbowl.jpg" width="108%"/></p>
-        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; ...</p>
+        <p class="dishdetails">Vegan Mexican Bowl<br />&#8377; 269</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -385,7 +395,7 @@
 
     <div class="dish7">
         <p ><img src="images/mixsalad.jpg" width="108%"/></p>
-        <p class="dishdetails">Protein Mix Salad<br />&#8377; ...</p>
+        <p class="dishdetails">Protein Mix Salad<br />&#8377; 269</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
@@ -394,7 +404,7 @@
 
     <div class="dish8">
         <p ><img src="images/rainsalad.jpg" width="108%"/></p>
-        <p class="dishdetails">Rainbow Salad<br />&#8377; ...</p>
+        <p class="dishdetails">Rainbow Salad<br />&#8377; 249</p>
         <br />
         <button class="button button1">Add+</button>
         <button class="button button2">Know more</button>
